@@ -48,9 +48,6 @@ email_to = "pavel.palpatinov@yandex.ru"
 server.login(sender, password)
 server.sendmail(email_from, email_to, let_ter)
 
-
-
-
 print(let_ter)
 
 server.quit()
