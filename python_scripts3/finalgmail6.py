@@ -38,16 +38,9 @@ Content-Type: text/plain; charset="UTF-8";
 На курсы, которые еще не вышли, можно подписаться и получить о релизе сразу на имейл.""".format(in_fitation=in_fitation,email_from=email_from,email_to=email_to,friend_name=friend_name,my_name=my_name,web_site=web_site)
 
 let_ter = let_ter.encode("UTF-8")
-
 server = smtplib.SMTP_SSL('smtp.yandex.ru', 465) 
-
 email_from = "pavel.palpatinov@yandex.ru"
 email_to = "pavel.palpatinov@yandex.ru"
-
- 
 server.login(sender, password)
 server.sendmail(email_from, email_to, let_ter)
-
-print(let_ter)
-
 server.quit()
